@@ -10,18 +10,30 @@
       <p>Software Developer</p>
     </div>
     <div class="content">
-      <div class="info-card">
+      <div class="info-card info3-bg">
         <h2>University of Wollongong</h2>
-        <p>
-          Bachelor of Computer Science, Major in Software Engineering & Digital
-          System Security
-        </p>
+        <button
+          class="info-button"
+          id="button3"
+          onclick="toggleDescription('description3', 'button3')"
+        ></button>
+        <div id="description3" style="display: none">
+          <b>Bachelor of Computer Science</b>
+          <p>Major in Software Engineering & Digital System Security</p>
+        </div>
       </div>
-      <div class="info-card">
+      <div class="info-card info2-bg">
         <h2>Flinders University</h2>
-        <p>Master of Computer Science</p>
+        <button
+          class="info-button"
+          id="button2"
+          onclick="toggleDescription('description2', 'button2')"
+        ></button>
+        <div id="description2" style="display: none">
+          <b>Master of Computer Science</b>
+        </div>
       </div>
-      <div class="info-card">
+      <div class="info-card info1-bg">
         <h2>Parcelhub</h2>
         <button
           class="info-button"
@@ -31,10 +43,7 @@
         <div id="description1" style="display: none">
           <b>Junior Software Developer</b>
           <ul>
-            <li>
-              Created features in mostly web views and some frontend for tablet
-              view
-            </li>
+            <li>Created features in web views and frontend for tablet view</li>
             <li>Handle bugs that are reported by clients</li>
             <li>
               Demo completed features to client and verify with the client if
@@ -43,11 +52,6 @@
           </ul>
         </div>
       </div>
-      <div class="info-card">
-        <h2>Project 2</h2>
-        <p>Description of Project 2.</p>
-      </div>
-      <!-- Add more projects as needed -->
     </div>
 
     <script>
