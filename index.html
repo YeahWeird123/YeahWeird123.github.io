@@ -10,9 +10,36 @@
       <p>Software Developer</p>
     </div>
     <div class="content">
+      <div class="education">
+        <h2>University of Wollongong</h2>
+        <p>
+          Bachelor of Computer Science, Major in Software Engineering & Digital
+          System Security
+        </p>
+      </div>
+      <div class="education">
+        <h2>Flinders University</h2>
+        <p>Master of Computer Science</p>
+      </div>
       <div class="project">
-        <h2>Project 1</h2>
-        <p>Description of Project 1.</p>
+        <h2>Parcelhub</h2>
+        <button onclick="toggleDescription('description1')">
+          Show/Hide Description
+        </button>
+        <div id="description1">
+          <b>Junior Software Developer</b>
+          <ul>
+            <li>
+              Created features in mostly web views and some frontend for tablet
+              view
+            </li>
+            <li>Handle bugs that are reported by clients</li>
+            <li>
+              Demo completed features to client and verify with the client if
+              the completed feature meets the requirement
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="project">
         <h2>Project 2</h2>
@@ -20,5 +47,16 @@
       </div>
       <!-- Add more projects as needed -->
     </div>
+
+    <script>
+      function toggleDescription(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
