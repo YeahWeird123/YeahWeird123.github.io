@@ -10,22 +10,23 @@
       <p>Software Developer</p>
     </div>
     <div class="content">
-      <div class="education">
+      <div class="info-card">
         <h2>University of Wollongong</h2>
         <p>
           Bachelor of Computer Science, Major in Software Engineering & Digital
           System Security
         </p>
       </div>
-      <div class="education">
+      <div class="info-card">
         <h2>Flinders University</h2>
         <p>Master of Computer Science</p>
       </div>
-      <div class="project">
+      <div class="info-card">
         <h2>Parcelhub</h2>
-        <button onclick="toggleDescription('description1')">
-          Show/Hide Description
-        </button>
+        <button
+          id="button1"
+          onclick="toggleDescription('description1', 'button1')"
+        ></button>
         <div id="description1">
           <b>Junior Software Developer</b>
           <ul>
@@ -41,7 +42,7 @@
           </ul>
         </div>
       </div>
-      <div class="project">
+      <div class="info-card">
         <h2>Project 2</h2>
         <p>Description of Project 2.</p>
       </div>
@@ -49,12 +50,15 @@
     </div>
 
     <script>
-      function toggleDescription(id) {
-        var x = document.getElementById(id);
-        if (x.style.display === "none") {
-          x.style.display = "block";
+      function toggleDescription(descriptionId, buttonId) {
+        var description = document.getElementById(descriptionId);
+        var button = document.getElementById(buttonId);
+        if (description.style.display === "none") {
+          description.style.display = "block";
+          button.classList.add("open");
         } else {
-          x.style.display = "none";
+          description.style.display = "none";
+          button.classList.remove("open");
         }
       }
     </script>
